@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:padding="@dimen/_5sdp"
+    style="@style/screen_background">
+
+    <LinearLayout
+        android:id="@+id/received_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="36dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/message_avatar_user"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/circle"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show_NameReceiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/nunitomedium"
+                android:text="UserA"
+                style="@style/text_color"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="10dp"
+                android:layout_marginHorizontal="5dp">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:maxHeight="150dp"
+                   android:maxWidth="300dp"
+                   android:src="@drawable/pic_welcome"
+                   android:id="@+id/image_msg_left"
+                   android:adjustViewBounds="true"
+                   android:layout_marginLeft="5dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/show_timeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/nunitomedium"
+                android:text="18:00"
+                style="@style/text_color"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

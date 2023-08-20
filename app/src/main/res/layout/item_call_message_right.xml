@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_marginLeft="55dp"
+    style="@style/screen_background"
+    android:orientation="vertical"
+    android:gravity="right">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sent_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rectangle"
+        android:backgroundTint="@color/purple"
+        android:padding="10dp"
+        android:clickable="true"
+        >
+
+        <ImageButton
+            android:id="@+id/call_icon_r"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_circle_button"
+            android:backgroundTint="@color/pink"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/call_icon_r"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sent_call_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/nunitomedium"
+                android:gravity="right"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="2dp"
+                android:text="hello world!!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sent_call_tap"
+                android:text="@string/tap_to_call_back"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="2dp"
+                android:gravity="right"
+                android:fontFamily="@font/nunitomedium"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/message_sent_time"-->
+<!--        android:layout_below="@+id/sent_message"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:fontFamily="@font/nunitomedium"-->
+<!--        android:gravity="right"-->
+<!--        style="@style/text_color"/>-->
+</LinearLayout>

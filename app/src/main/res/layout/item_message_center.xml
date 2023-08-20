@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+    style="@style/screen_background"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/notify_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hieu removed chien from the group"
+        android:fontFamily="@font/nunitomedium"
+        style="@style/text_color"
+        android:textSize="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingVertical="2dp"/>
+
+    <TextView
+        android:id="@+id/notify_time"
+        android:layout_below="@+id/notify_message"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/nunitomedium"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"
+        style="@style/text_color"/>
+</LinearLayout>

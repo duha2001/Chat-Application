@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient">
+
+    <Button
+        android:id="@+id/btn_backScreen"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="@color/pink"
+        android:layout_margin="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dispaly_avatar_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_account"
+        app:civ_border_color="@color/l_purple"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="5dp" />
+
+    <TextView
+        android:id="@+id/display_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dispaly_avatar_user"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nunitobold"
+        android:text="Name of user"
+        android:textColor="@color/gray"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_username"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nunitomedium"
+        android:text="calling from D-FIVE..."
+        android:textColor="@color/gray" />
+
+    <ImageButton
+        android:id="@+id/btn_cancel_call"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_call_end"
+        android:background="@drawable/bg_circle_button"
+        android:backgroundTint="#FF2929"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_100sdp"/>
+
+    <ImageButton
+        android:id="@+id/btn_ok_call"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_call_ok"
+        android:background="@drawable/bg_circle_button"
+        android:backgroundTint="@color/green"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_100sdp"/>
+</RelativeLayout>

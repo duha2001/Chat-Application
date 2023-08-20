@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".callsession.VideoCallActivity">
+
+    <RelativeLayout
+        android:id="@+id/calls_conference_video_call_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:layout_marginBottom="-14dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/calls_conference_bottom_button_panel">
+
+        <TextureView
+            android:id="@+id/remote_video_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-1dp" />
+
+        <org.linphone.mediastream.video.capture.CaptureTextureView
+            android:id="@+id/local_preview_video_surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/calls_conference_bottom_button_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_bar_up"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calls_conference_camera_video_btn_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rounded_bar_up"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.25">
+
+            <ImageButton
+                android:id="@+id/calls_conference_camera_video_btn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="12dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="#767676"
+                android:clickable="true"
+                android:padding="19dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_camoff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.25" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calls_conference_speaker_btn_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@+id/calls_conference_camera_video_btn_area"
+            app:layout_constraintWidth_percent="0.25">
+
+            <ImageButton
+                android:id="@+id/btnSwitch"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="#767676"
+                android:clickable="true"
+                android:padding="18dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_switch_camera"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calls_conference_mic_btn_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@+id/calls_conference_speaker_btn_area"
+            app:layout_constraintWidth_percent="0.25">
+
+            <ImageButton
+                android:id="@+id/btnMic"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="#767676"
+                android:clickable="true"
+                android:padding="18dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_unmute"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_bar_up"
+            app:layout_constraintStart_toEndOf="@+id/calls_conference_mic_btn_area"
+            app:layout_constraintWidth_percent="0.25">
+
+            <ImageButton
+                android:id="@+id/btnEndCall"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="#FF2929"
+                android:clickable="true"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_call_end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:padding="@dimen/_5sdp"
+    style="@style/screen_background">
+
+    <LinearLayout
+        android:id="@+id/received_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/message_avatar_user"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_person"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show_NameReceiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/nunitomedium"
+                android:text="UserA"
+                style="@style/text_color"/>
+
+            <TextView
+                android:id="@+id/receive_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rectangle"
+                android:backgroundTint="@color/pink"
+                android:text="hello world!!"
+                android:fontFamily="@font/nunitomedium"
+                android:textColor="@color/white"
+                android:paddingHorizontal="16dp"
+                android:textSize="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:textAlignment="gravity"
+                android:gravity="center|left|left"
+                android:paddingVertical="2dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/show_timeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/nunitomedium"
+                android:text="18:00"
+                style="@style/text_color"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

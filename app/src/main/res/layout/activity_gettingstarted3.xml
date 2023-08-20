@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/calling_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:background="@drawable/bg_gettingstarted"
+                android:gravity="center"
+                android:padding="50dp">
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/calling" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/call"
+            android:textSize="30dp"
+            android:fontFamily="@font/nunitoextrabold"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_phone" -->
+<!--                android:paddingLeft="20dp"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/make_phone_calls_with_your_loved_ones_easily_and_conveniently"
+                android:textSize="18dp"
+                android:fontFamily="@font/nunitomedium"
+                android:textColor="@color/gray"
+                android:gravity="center"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circle"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/circle"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bg_rectangle_corner" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_nextLoginScreen"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_rectangle_corner"
+            android:layout_alignParentRight="true"
+            android:text="@string/login"
+            android:textSize="12dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>

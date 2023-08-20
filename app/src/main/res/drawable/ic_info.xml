@@ -1,0 +1,67 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+  <path
+      android:pathData="M32,2.75A29.25,29.25 0,1 0,61.25 32,29.28 29.28,0 0,0 32,2.75ZM32,58.75A26.75,26.75 0,1 1,58.75 32,26.78 26.78,0 0,1 32,58.75Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="2.75"
+          android:startY="32"
+          android:endX="61.25"
+          android:endY="32"
+          android:type="linear">
+        <item android:offset="0" android:color="@color/purple"/>
+        <item android:offset="0.58" android:color="@color/l_purple"/>
+        <item android:offset="1" android:color="@color/pink"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M32,7.4A24.6,24.6 0,1 0,56.6 32,24.62 24.62,0 0,0 32,7.4ZM32,54.1A22.1,22.1 0,1 1,54.1 32,22.12 22.12,0 0,1 32,54.1Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="7.4"
+          android:startY="32"
+          android:endX="56.6"
+          android:endY="32"
+          android:type="linear">
+        <item android:offset="0" android:color="@color/purple"/>
+        <item android:offset="0.58" android:color="@color/l_purple"/>
+        <item android:offset="1" android:color="@color/pink"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M32,23.66a4,4 0,0 0,-4 4L28,44.26a4,4 0,0 0,7.92 0L35.92,27.62A4,4 0,0 0,32 23.66ZM33.46,44.26a1.46,1.46 0,0 1,-2.92 0L30.54,27.62a1.46,1.46 0,0 1,2.92 0Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="28.04"
+          android:startY="35.94"
+          android:endX="35.96"
+          android:endY="35.94"
+          android:type="linear">
+        <item android:offset="0" android:color="@color/purple"/>
+        <item android:offset="0.58" android:color="@color/l_purple"/>
+        <item android:offset="1" android:color="@color/pink"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M32,13.59a4,4 0,1 0,4 4A4,4 0,0 0,32 13.59ZM32,19a1.46,1.46 0,1 1,1.46 -1.46A1.47,1.47 0,0 1,32 19Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="28.04"
+          android:startY="17.55"
+          android:endX="35.96"
+          android:endY="17.55"
+          android:type="linear">
+        <item android:offset="0" android:color="@color/purple"/>
+        <item android:offset="0.58" android:color="@color/l_purple"/>
+        <item android:offset="1" android:color="@color/pink"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>

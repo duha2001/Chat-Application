@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">D_five</string>
+    <string name="domain_name">Domain name</string>
+    <string name="username">Username</string>
+    <string name="questionLanguage_vn">You need to restart the application to switch from Vietnamese to English.</string>
+    <string name="questionLanguage_en">You need to restart the application to switch  from English to Vietnamese.</string>
+    <string name="welcome_to_nd_five_app">Welcome to \nD-five app</string>
+    <string name="let_s_explore_great_call_and_messaging_features_together">Let’s explore great call and messaging features together</string>
+    <string name="skip"><![CDATA[Skip >]]></string>
+    <string name="message">Message</string>
+    <string name="send_messages_and_share_feelings_with_your_loved_ones">Send messages and share feelings with your loved ones</string>
+    <string name="call">Call</string>
+    <string name="make_phone_calls_with_your_loved_ones_easily_and_conveniently">Make phone calls with your loved ones easily and conveniently</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="add_new_contact">ADD NEW CONTACT</string>
+    <string name="enter_username">Enter username...</string>
+    <string name="search">Search</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_group">New Group</string>
+    <string name="create">Create</string>
+    <string name="group_name">Group name (Optional)</string>
+    <string name="send_failed_do_you_want_to_delete">Send Failed : Do you want to delete</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure_you_want_to_delete_this_user">Are you sure you want to delete this user?</string>
+    <string name="delete">Delete</string>
+    <string name="add_new_participate">ADD NEW PARTICIPANT</string>
+    <string name="delete_participate">DELETE PARTICIPANT</string>
+    <string name="delete_contact">Delete contact</string>
+    <string name="calls">Calls</string>
+    <string name="chats">Chats</string>
+    <string name="contacts">Contacts</string>
+    <string name="language">Language</string>
+    <string name="ti_ng_vi_t">Tiếng Việt</string>
+    <string name="english">English</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="light_mode">Light mode</string>
+    <string name="refresh">Refresh</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_log_out">Are you sure you want to log out?</string>
+    <string name="chat">Chat</string>
+    <string name="title_activity_language">LanguageActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="write_a_message">Write a message...</string>
+    <string name="profile">Profile</string>
+    <string name="change_name">CHANGE NAME</string>
+    <string name="enter_new_name_noti">Enter the new name you want</string>
+    <string name="enter_new_name">Enter new name...</string>
+    <string name="change">Change</string>
+    <string name="delete_conversation">Delete Conversation</string>
+    <string name="all">All</string>
+    <string name="missed">Missed</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="unsubscribe">Un-Subscribe</string>
+    <string name="tap_to_call_back">Tap to call back</string>
+    <string name="loading">Loading</string>
+    <string name="notification">Notification</string>
+    <string name="pls_enter_msg">Please enter message first</string>
+    <string name="too_long">Too long!!</string>
+    <string name="you_was_deleted">You was deleted, cannot send a message to </string>
+    <string name="pls_enter_name">Please enter name!!</string>
+    <string name="send_success">Sent successfully!!</string>
+    <string name="add_success">Add User OKE</string>
+    <string name="delete_success">Delete User OKE</string>
+    <string name="cant_delete">Cannot delete</string>
+    <string name="update_name_success">Update new name ok !</string>
+    <string name="named_group"> named the group </string>
+    <string name="out_group"> from the group</string>
+    <string name="removed"> removed </string>
+    <string name="added"> added </string>
+    <string name="to_group"> to the group </string>
+    <string name="downloaded">Downloaded</string>
+    <string name="pls_fill_domain">Please fill in your domain</string>
+    <string name="pls_fill_name">Please fill in your username</string>
+    <string name="pls_fill_pass">Please fill in your password</string>
+    <string name="logout_failed">Logout failed! Please try again</string>
+    <string name="re_register">This account is registering on another device.</string>
+    <string name="deleted_from">You was deleted from </string>
+    <string name="exit_or_not">Do you want to exit?</string>
+    <string name="leave_group">left the group</string>
+    <string name="add_participant">Add Participant</string>
+    <string name="participants">Participants</string>
+    <string name="leave_chat">Leave Chat</string>
+    <string name="accept_video">You are invited to a video call. Do you want to open the camera?</string>
+    <string name="new_message_title">DFIVE Chat</string>
+    <string name="new_message_content">You have new messages</string>
+    <string name="setting">Setting</string>
+    <string name="flashlight">Flashlight</string>
+    <string name="ringtone">Ringtone</string>
+</resources>

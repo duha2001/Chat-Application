@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_screen"
+    style="@style/screen_background">
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btn_backScreen"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="@color/pink" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dispaly_avatar_user"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/btn_backScreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_account"
+        app:civ_border_color="@color/l_purple"
+        app:civ_border_width="5dp" />
+
+    <TextView
+        android:id="@+id/display_username"
+        style="@style/title_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dispaly_avatar_user"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nunitobold"
+        android:text="Name of user"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/display_impu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_username"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nunitomedium"
+        android:text="sip of user"
+        android:textColor="@color/gray"
+        android:textSize="20dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/groupCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/display_impu"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/layout_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/layout_video"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageButton
+                android:id="@+id/btn_call"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_circle_button_purple"
+                android:backgroundTint="@color/purple"
+                android:src="@drawable/ic_phone"
+                android:layout_gravity="center"
+                style="@style/button_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunitobold"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp"
+            app:layout_constraintStart_toEndOf="@id/layout_call"
+            app:layout_constraintEnd_toStartOf="@id/layout_chat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageButton
+                android:id="@+id/btn_videocall"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_circle_button_purple"
+                android:backgroundTint="@color/purple"
+                android:src="@drawable/ic_videocall"
+                android:layout_gravity="center"
+                style="@style/button_background"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunitobold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/layout_video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageButton
+                android:id="@+id/btn_chat"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_circle_button_purple"
+                android:backgroundTint="@color/purple"
+                android:src="@drawable/ic_chat"
+                android:layout_gravity="center"
+                style="@style/button_background"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunitobold"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        android:layout_below="@+id/groupCall"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/pink"
+        android:layout_centerInParent="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRecentCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_call"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/underline"
+        />
+
+    <Button
+        android:id="@+id/btn_deleteUser"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_rectangle_corner"
+        android:backgroundTint="#FE776E"
+        android:fontFamily="@font/nunitomedium"
+        android:text="@string/delete_contact"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+</RelativeLayout>

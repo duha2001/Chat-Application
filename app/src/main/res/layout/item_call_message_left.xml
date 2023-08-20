@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:padding="@dimen/_5sdp"
+    style="@style/screen_background">
+
+    <LinearLayout
+        android:id="@+id/received_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/message_call_avatar_user"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_person"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show_NameReceiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/nunitomedium"
+                android:text="UserA"
+                style="@style/text_color"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rectangle"
+                android:backgroundTint="@color/pink"
+                android:padding="10dp"
+                android:clickable="true"
+                android:layout_marginLeft="8dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/call_icon_l"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/bg_circle_button"
+                    android:backgroundTint="@color/purple"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_phone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/call_icon_l"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/receive_call_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/nunitomedium"
+                        android:gravity="right"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="2dp"
+                        android:text="hello world!!"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/receive_call_tap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tap_to_call_back"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="2dp"
+                        android:gravity="right"
+                        android:fontFamily="@font/nunitomedium"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/_10sdp"
+                    />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

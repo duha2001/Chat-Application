@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp"
+    style="@style/screen_background"
+    android:id="@+id/layout_add_contact"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_dialog_name"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/add_new_contact"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunitoextrabold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:focusableInTouchMode="true">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/inputUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:queryHint="Enter username"
+                app:iconifiedByDefault="false"
+                android:background="@drawable/bg_search_view"
+                android:gravity="center"
+                android:hint="@string/enter_username"
+                android:textColor="@color/gray"
+                android:padding="5dp"
+                android:fontFamily="@font/nunitomedium"
+                android:backgroundTint="@color/l_gray"/>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_rectangle_corner"
+                android:backgroundTint="@color/purple"
+                android:layout_marginLeft="10dp"
+                android:text="@string/search"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nunitobold"/>
+        </LinearLayout>
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:paddingHorizontal="16dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0">-->
+
+        <!--        </ScrollView>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_contact_in_db"
+            android:background="@drawable/bg_rectangle"
+            android:backgroundTint="@color/l_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_logout_button"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_logout_button"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

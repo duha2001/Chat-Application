@@ -1,0 +1,87 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.D_five" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.D_five" parent="Base.Theme.D_five" />
+    <style name="SlideActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <style name="MyCustomTextInputStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="hintTextAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <style name="MyCustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/gray</item>
+        <item name="fontFamily">@font/nunitomedium</item>
+    </style>
+
+    <!--    Light Mode-->
+    <style name="screen_background">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="text_color">
+        <item name="android:textColor">@color/gray</item>
+        <item name="hintTextColor">@color/black</item>
+    </style>
+
+    <style name="title_color">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:background">@drawable/bg_rectangle_corner</item>
+        <item name="android:backgroundTint">@color/l_gray</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="button_background">
+        <item name="android:backgroundTint">@color/gray</item>
+    </style>
+
+    <style name="screen_bottom_sheet_background">
+        <item name="android:background">@drawable/bottom_sheet_background2</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="screen_card_background">
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="screen_card_language_background">
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="button_dark_mode">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:drawableStart">@drawable/ic_dark_mode</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">@string/dark_mode</item>
+    </style>
+
+    <style name="button_language_refresh_logout">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="navigation_bar">
+        <item name="android:background">@color/white</item>
+        <item name="itemIconTint">@drawable/bottom_navigation_selector</item>
+        <item name="itemTextColor">@color/purple</item>
+    </style>
+
+    <style name="item_text_color">
+        <item name="android:textColor">@color/purple</item>
+        <item name="hintTextColor">@color/black</item>
+    </style>
+
+    <style name="item_contact_db">
+        <item name="android:background">@color/l_gray</item>
+    </style>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_marginLeft="55dp"
+    style="@style/screen_background"
+    android:orientation="vertical"
+    android:gravity="right">
+
+    <TextView
+        android:id="@+id/sent_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rectangle"
+        android:backgroundTint="@color/purple"
+        android:text="hello worldd !!"
+        android:textAlignment="gravity"
+        android:fontFamily="@font/nunitomedium"
+        android:textColor="@color/white"
+        android:paddingHorizontal="16dp"
+        android:textSize="@dimen/_15sdp"
+        android:layout_alignParentRight="true"
+        android:gravity="center|left|left"
+        android:paddingVertical="2dp"/>
+
+    <TextView
+        android:id="@+id/message_sent_time"
+        android:layout_below="@+id/sent_message"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/nunitomedium"
+        android:gravity="right"
+        style="@style/text_color"/>
+</LinearLayout>
